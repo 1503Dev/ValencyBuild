@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValencyBuild.CLI", "ValencyBuild.CLI\ValencyBuild.CLI.csproj", "{656C3346-A008-4EF2-B16C-06560014E668}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{656C3346-A008-4EF2-B16C-06560014E668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{656C3346-A008-4EF2-B16C-06560014E668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{656C3346-A008-4EF2-B16C-06560014E668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{656C3346-A008-4EF2-B16C-06560014E668}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88F8A4E9-F69D-4B30-B49A-7B387667525A}
+	EndGlobalSection
+EndGlobal
