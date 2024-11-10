@@ -7,21 +7,23 @@ import java.text.ParseException;
 public class Program {
 
 	public static void main(String[] args) throws IOException, ParseException {
-		System.out.println("Valency Package Manager - Valency Build Hydrogen [1.0.0.1]");
-		if (args.length == 0){
-			displayhelp();
-			return;
-		}
-		else if (args[0].equalsIgnoreCase("help")){
-			displayhelp();
-			return;
-		}
-
-		switch (args[0].toLowerCase()){
-			case "update":
-				Index.update();
-				System.out.println("更新完成");
-		}
+		Index.update();
+		return;
+//		System.out.println("Valency Package Manager - Valency Build Hydrogen [1.0.0.1]");
+//		if (args.length == 0){
+//			displayhelp();
+//			return;
+//		}
+//		else if (args[0].equalsIgnoreCase("help")){
+//			displayhelp();
+//			return;
+//		}
+//
+//		switch (args[0].toLowerCase()){
+//			case "update":
+//				Index.update();
+//				System.out.println("更新完成");
+//		}
 
 	}
 

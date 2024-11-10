@@ -18,7 +18,7 @@ import org.json.*;
 
 public class Index {
 	public static File indexFile = new File(combine(System.getProperty("user.home"), ".valency"));
-	static String github_index = "";
+	static String github_index = "https://raw.githubusercontent.com/1503Dev/ValencyBuild/refs/heads/main/vpkg-index/index.json";
 	static String gitee_index = "";
 	public List<Package> versions;
 	public Version indexVersion;
@@ -44,12 +44,15 @@ public class Index {
 			if (json.has("lastUpdate")) {
 				var lastUpdate = parseDate(json.getString("lastUpdate"));
 				if (lastUpdate.after(nowtime)) {
-					var index = new Index();
-					index.indexVersion = new Version(json.getString("version"));
-					index.versions = parsePackageList(json.getJSONArray("packages"));
+					update();
 				}
 				else {
 					System.out.println("当前源是最新的。");
+					var index = new Index();
+					index.indexVersion = new Version(json.getString("version"));
+					index.versions = parsePackageList(json.getJSONArray("packages"));
+					index.lastUpdate = lastUpdate;
+					return index;
 				}
 			}
 		} else {
