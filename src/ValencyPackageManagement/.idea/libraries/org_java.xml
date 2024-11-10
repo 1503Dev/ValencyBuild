@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.java">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../SDKs/csdk-beta/libs/org.java.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

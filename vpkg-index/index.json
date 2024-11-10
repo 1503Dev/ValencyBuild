@@ -1,0 +1,16 @@
+{
+	"version": "beta",
+	"update_time": 20241110120000,
+	"packages": [
+		{
+			"id": "cstd",
+			"author": "cb",
+			"versions": [
+				{
+					"version": "1.0.0.1",
+					"location": "127.0.0.1"
+				}
+			]
+		}
+	]
+}
