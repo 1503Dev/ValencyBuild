@@ -1,0 +1,5 @@
+const str hello = "wdnmd";
+
+function main(String[] args){
+	host.stdout.print(hello);
+}
