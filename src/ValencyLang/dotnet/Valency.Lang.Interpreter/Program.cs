@@ -28,7 +28,7 @@ namespace Valency.Lang.Interpreter
                     continue;
                 }
 
-                StringBuilder token = new(128);
+                StringBuilder keyword = new(128);
                 while (true)
                 {
 
@@ -36,7 +36,21 @@ namespace Valency.Lang.Interpreter
                     {
                         break;
                     }
-                    
+                    keyword.Append(content[current]);
+                }
+
+                switch (Keyword.GetKeyword(keyword.ToString()))
+                {
+                    case Keyword.KeywordType.Const:
+                        while (true)
+                        {
+
+                        }
+                        break;
+                    case Keyword.KeywordType.Function:
+                        break;
+                    default:
+                        break;
                 }
             }
         }
